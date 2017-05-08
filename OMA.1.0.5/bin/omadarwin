@@ -1,0 +1,40 @@
+#!/bin/bash
+
+DARWIN_PATH=$(dirname $0)
+# convert relative to absolute path
+if [ ${DARWIN_PATH:0:1} != "/" ]
+then
+    DARWIN_PATH="$PWD/$DARWIN_PATH"
+fi
+DARWIN_LIB="$DARWIN_PATH/../darwinlib"
+
+machine=$(uname -m)
+os=$(uname -s)
+
+DARWIN_BINARY="$DARWIN_PATH/omadarwin.linux32"
+
+if [ $os = "Linux" ]
+then
+    ulimit -s unlimited
+    if [ $machine = "x86_64" ]
+    then
+        DARWIN_BINARY="$DARWIN_PATH/omadarwin.linux64"
+    fi
+elif [ $os = "Darwin" ]
+then
+    ulimit -s hard
+    if [ $machine = "x86_64" ]
+    then
+        DARWIN_BINARY="$DARWIN_PATH/omadarwin.mac64"
+    else
+        DARWIN_BINARY="$DARWIN_PATH/omadarwin.mac32"
+    fi
+else
+    echo "Operating system not supported!"
+fi
+if [ -f $DARWIN_BINARY ]; then
+    exec $DARWIN_BINARY -l $DARWIN_LIB $@
+else
+    exec darwin $@
+fi
+

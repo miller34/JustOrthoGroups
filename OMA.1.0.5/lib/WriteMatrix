@@ -1,0 +1,65 @@
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 2.0
+#
+# The contents of this file are subject to the Mozilla Public License Version
+# 2.0 (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/2.0/
+#
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+# for the specific language governing rights and limitations under the
+# License.
+#
+# The Original Code is OMA standalone.
+#
+# The Initial Developer of the Original Code is CBRG Research Group; 
+# ETH Zurich; Switzerland.
+# Portions created by the Initial Developer are Copyright (C) 2005-2013
+# the Initial Developer. All Rights Reserved.
+#
+# Contributor(s):
+#   Christophe Dessimoz <cdessimoz@inf.ethz.ch>
+#   Adrian Altenhoff <adrian.altenhoff@inf.ethz.ch>
+#   Stefan Zoller <stefan.zoller@inf.ethz.ch>
+#   Adrian Schneider <adrian.schneider@inf.ethz.ch>
+#   Alexander Roth <alexander.roth@inf.ethz.ch>
+#   Gaston Gonnet <gonnet@inf.ethz.ch>
+#
+# ***** END LICENSE BLOCK *****
+
+module external WriteMatrix, WriteGroups;
+
+WriteMatrix := proc(Ort:matrix(numeric), fname:string)
+    # Store the groups of orthologs
+    OpenWriting(fname);
+    print('\# The groups of orthologs are given as matrix with group per row', 
+         '\# and one genome per tab-separated column. Numbers refer to',
+         '\# entry number as listed in the file "Map-SeqNum-id.map.',
+         '\# Alternatively, use the OrthologousGroup.txt representation.');
+    prints(ConcatStrings(genomes,'\t'));
+    for r to length(Ort) do
+        prints(ConcatStrings(zip(string(Ort[r])),'\t'));
+    od;
+    OpenWriting(previous);
+end:
+
+WriteGroups := proc(Ort, fname)
+    OpenWriting(fname);
+    print('\# The groups of orthologs are given as one per row, starting',
+          '\# with a group identifier, followed by all group members, all',
+          '\# separated by tabs. For a more compact representation, use the',
+          '\# OrthologousMatrix.txt representation.');
+    for r to length(Ort) do
+        printf('OMA%05d',r);
+        for l to NG do
+            if Ort[r,l] <> 0 then
+                printf('\t%s:%s',genomes[l],IDtable[l,Ort[r,l]]);
+            fi;
+        od;
+        printf('\n');
+    od;
+    OpenWriting(previous);
+end:
+
+end: #module
