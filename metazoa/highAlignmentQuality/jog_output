@@ -1,0 +1,41 @@
+OrthoGroup 1:
+metazoa/highAlignmentQuality/DB/1.fa	>FBpp0111630/4-733
+metazoa/highAlignmentQuality/DB/2.fa	>ENSDARP00000028344/8-585
+metazoa/highAlignmentQuality/DB/3.fa	>ENSDARP00000056521/1-636
+metazoa/highAlignmentQuality/DB/4.fa	>ENSTNIP00000017957/1-633
+metazoa/highAlignmentQuality/DB/5.fa	>ENSMODP00000035037/1-637
+metazoa/highAlignmentQuality/DB/6.fa	>ENSGALP00000015220/1-648
+metazoa/highAlignmentQuality/DB/7.fa	>ENSMUSP00000029194/1-634
+metazoa/highAlignmentQuality/DB/8.fa	>ENSRNOP00000013191/1-636
+metazoa/highAlignmentQuality/DB/9.fa	>ENSCAFP00000021877/1-645
+metazoa/highAlignmentQuality/DB/10.fa	>ENSP00000259119/1-643
+metazoa/highAlignmentQuality/DB/11.fa	>ENSPTRP00000026869/1-643
+metazoa/highAlignmentQuality/DB/12.fa	>ENSCINP00000000131/1-273
+metazoa/highAlignmentQuality/DB/13.fa	>ENSTNIP00000017814/1-673
+metazoa/highAlignmentQuality/DB/14.fa	>ENSDARP00000094325/1-657
+metazoa/highAlignmentQuality/DB/15.fa	>ENSGALP00000039617/1-680
+metazoa/highAlignmentQuality/DB/16.fa	>ENSMODP00000026148/1-643
+metazoa/highAlignmentQuality/DB/17.fa	>ENSMUSP00000030917/1-693
+metazoa/highAlignmentQuality/DB/18.fa	>ENSRNOP00000020560/1-387
+metazoa/highAlignmentQuality/DB/19.fa	>ENSCAFP00000028655/1-696
+metazoa/highAlignmentQuality/DB/20.fa	>ENSP00000367797/1-694
+metazoa/highAlignmentQuality/DB/21.fa	>ENSPTRP00000000080/1-613
+metazoa/highAlignmentQuality/DB/22.fa	>ENSDARP00000091440/1-692
+metazoa/highAlignmentQuality/DB/23.fa	>ENSTNIP00000007613/1-284
+-----------------------------
+OrthoGroup 2:
+metazoa/highAlignmentQuality/DB/33.fa	>ENSP00000397259/1-354
+metazoa/highAlignmentQuality/DB/34.fa	>ENSDARP00000094893/1-367
+metazoa/highAlignmentQuality/DB/35.fa	>ENSTNIP00000022109/1-201
+metazoa/highAlignmentQuality/DB/36.fa	>jgi|Nemve1|236583|estExt_fgenesh1_kg.C_260017/1-350
+metazoa/highAlignmentQuality/DB/25.fa	>FBpp0112092/1-196
+metazoa/highAlignmentQuality/DB/26.fa	>ENSCINP00000000728/1-260
+metazoa/highAlignmentQuality/DB/27.fa	>ENSTNIP00000006899/1-351
+metazoa/highAlignmentQuality/DB/28.fa	>ENSMODP00000014717/1-356
+metazoa/highAlignmentQuality/DB/29.fa	>ENSRNOP00000028407/1-354
+metazoa/highAlignmentQuality/DB/30.fa	>ENSMUSP00000102750/1-352
+metazoa/highAlignmentQuality/DB/31.fa	>ENSCAFP00000021066/1-354
+metazoa/highAlignmentQuality/DB/32.fa	>ENSPTRP00000015763/1-283
+-----------------------------
+OrthoGroup Ungrouped Genes:
+metazoa/highAlignmentQuality/DB/24.fa	>gi|221124087|ref|XP_002159999.1|/13-618

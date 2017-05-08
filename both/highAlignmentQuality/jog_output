@@ -1,0 +1,21 @@
+OrthoGroup 1:
+both/highAlignmentQuality/DB/2.fa	>ENSCINP00000025837/1-166
+both/highAlignmentQuality/DB/3.fa	>FBpp0070443/1-133
+both/highAlignmentQuality/DB/4.fa	>ENSMODP00000016799/1-132
+both/highAlignmentQuality/DB/5.fa	>ENSGALP00000034981/1-110
+both/highAlignmentQuality/DB/6.fa	>ENSCAFP00000008389/1-133
+both/highAlignmentQuality/DB/7.fa	>ENSP00000384579/1-132
+both/highAlignmentQuality/DB/8.fa	>ENSPTRP00000018769/1-132
+both/highAlignmentQuality/DB/9.fa	>ENSMUSP00000062066/1-133
+both/highAlignmentQuality/DB/10.fa	>ENSRNOP00000027029/1-133
+both/highAlignmentQuality/DB/11.fa	>ENSTNIP00000007562/1-131
+both/highAlignmentQuality/DB/12.fa	>ENSDARP00000105908/1-125
+both/highAlignmentQuality/DB/13.fa	>ENSDARP00000108270/1-131
+both/highAlignmentQuality/DB/16.fa	>gi|23464602|ref|NP_696970.1|/1-117
+-----------------------------
+OrthoGroup 2:
+both/highAlignmentQuality/DB/14.fa	>gi|156356491|ref|XP_001623956.1|/1-110
+both/highAlignmentQuality/DB/15.fa	>gi|221103497|ref|XP_002155177.1|/1-167
+-----------------------------
+OrthoGroup Ungrouped Genes:
+both/highAlignmentQuality/DB/1.fa	>T03D8.2/1-149

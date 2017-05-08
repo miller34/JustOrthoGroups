@@ -1,0 +1,90 @@
+##########################
+
+JustOrthologs
+Created By: Justin Miller, Brandon Pickett, Perry Ridge
+Email: jmiller@byu.edu
+
+##########################
+
+Purpose: Identify Orthologous Groups in one or more FASTA files
+
+##########################
+
+ARGUMENT OPTIONS:
+
+	-h, --help            show this help message and exit
+	-i [INPUT [INPUT ...]]Input Fasta Files
+	-id INPUTDIR          Input Directory with Fasta Files
+	-o OUTPUT             Output OrthoGroup File
+	-t THREADS            Number of Cores
+	-d OVERLAP            Direct Overlap
+	-c OCCURANCES         Number of Occurances
+	-dna                  Flag for DNA sequences
+	-rna                  Flag for RNA sequences
+
+##########################
+
+REQUIREMENTS:
+
+JustOrthoGroups uses Python version 2.7
+
+Python libraries that must be installed include:
+1. sys
+2. os
+3. multiprocessing
+4. argparse
+5. BioPython
+6. gzip
+7. collections
+
+If any of those libraries is not currently in your Python Path, use the following command:
+pip install --user [library_name]
+to install the library to your path.
+
+##########################
+
+Input Files:
+This algorithm requires one or more fasta files, or a directory which contains one or more fasta files.
+
+Output File:
+An output file is required. Ortholog groups will be assigned and written to the output file.
+
+##########################
+
+USAGE:
+
+Typical usage requires the -i and -o options. When using -i, input file names are space separated, 
+with one or more files required. The algorithm with compare all protein sequences in all files to find 
+the best global orthologous groups.
+
+The default number of threads is 1. If you want to change that, use the -t option.
+
+The default direct overlap region length is 6. 
+	Raising this value will decrease the number of genes in each orthologous group. 
+
+The default number of occurances required is 4. 
+	Raising this value will decrease the number of genes in each orthologous group. 
+
+
+Example usage:
+python justOrthoGroups.py -id test -o testOut
+python justOrthoGroups.py -i test/test1.fa test/test1.fa -o testOut
+
+
+Running one of the above commands will produce a single output file called outputGroups in the current directory.
+
+##########################
+
+License:
+
+This algorithm is free for all academic and non-profit research purposes. 
+
+We only ask that you please cite the following paper if you use this algorithm:
+JustOrthologs: A Fast, Accurate, and User-Friendly Ortholog-Finding Algorithm
+
+For any for-profit usage, please contact Justin Miller at jmiller@byu.edu
+
+##########################
+
+Thank you, and happy researching!!
+

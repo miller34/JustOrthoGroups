@@ -1,0 +1,26 @@
+OrthoGroup 1:
+metazoa/lowEvolutionSpeed/DB/1.fa	>ENSP00000409481/1-85
+metazoa/lowEvolutionSpeed/DB/2.fa	>ENSPTRP00000059114/1-85
+metazoa/lowEvolutionSpeed/DB/3.fa	>ENSDARP00000030382/1-70
+metazoa/lowEvolutionSpeed/DB/4.fa	>ENSTNIP00000020914/1-70
+metazoa/lowEvolutionSpeed/DB/5.fa	>ENSCAFP00000003181/1-70
+metazoa/lowEvolutionSpeed/DB/6.fa	>ENSMUSP00000040741/1-70
+metazoa/lowEvolutionSpeed/DB/7.fa	>ENSRNOP00000013841/1-70
+metazoa/lowEvolutionSpeed/DB/8.fa	>ENSGALP00000015826/1-70
+-----------------------------
+OrthoGroup 2:
+metazoa/lowEvolutionSpeed/DB/9.fa	>Y54F10BM.14
+metazoa/lowEvolutionSpeed/DB/10.fa	>FBpp0078894
+metazoa/lowEvolutionSpeed/DB/11.fa	>ENSCAFP00000001529
+metazoa/lowEvolutionSpeed/DB/12.fa	>ENSDARP00000066396
+metazoa/lowEvolutionSpeed/DB/13.fa	>ENSP00000216252
+metazoa/lowEvolutionSpeed/DB/14.fa	>ENSGALP00000019471
+metazoa/lowEvolutionSpeed/DB/15.fa	>ENSMODP00000020665
+metazoa/lowEvolutionSpeed/DB/16.fa	>ENSMUSP00000023117
+metazoa/lowEvolutionSpeed/DB/17.fa	>ENSPTRP00000024852
+metazoa/lowEvolutionSpeed/DB/18.fa	>ENSRNOP00000005837
+metazoa/lowEvolutionSpeed/DB/19.fa	>ENSTNIP00000015919
+metazoa/lowEvolutionSpeed/DB/20.fa	>ENSCINP00000004649
+metazoa/lowEvolutionSpeed/DB/21.fa	>jgi|Nemve1|218593|fgenesh1_pg.scaffold_355000013
+-----------------------------
+OrthoGroup Ungrouped Genes:
