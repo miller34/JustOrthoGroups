@@ -20,7 +20,7 @@ def findOrthoGroup(allOrthologs,key,allOrthos):
 def getAllSubSeq(input):
 	sequence,dirOverlap = input
 	allSub = set()
-	for x in range(len(sequence)-dirOverlap+1):
+	for x in xrange(len(sequence)-dirOverlap+1):
 		allSub.add(sequence[x:x+dirOverlap])
 	return allSub
 
@@ -104,7 +104,7 @@ def forPoolGroupings(zz):
 	x,numOccurances =zz
 	numInstances = len(results)
 	returnStuff = []
-	for y in range(x,numInstances):
+	for y in xrange(x,numInstances):
 		addThis = len(results[x] & results[y])
 		if addThis>numOccurances:
 			returnStuff.append((x,y))
@@ -115,7 +115,7 @@ def getGroupings(numToHeader,results,threads,numOccurances):
 	numInstances = len(results)
 	pool = Pool(threads)
 	myNums = []
-	for x in range(numInstances):
+	for x in xrange(numInstances):
 		myNums.append((x,numOccurances))
 	#print "HI"
 	temp = pool.map(forPoolGroupings,myNums,chunksize=1)
