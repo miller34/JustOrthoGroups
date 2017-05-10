@@ -1,12 +1,8 @@
 #! /usr/bin/env python
 import sys
-import gzip
 from multiprocessing import Process, current_process, freeze_support, Pool
 import argparse
-import os
-import collections as cl
 from Bio.Seq import Seq
-from Bio.Alphabet import generic_rna,generic_dna
 
 def findOrthoGroup(allOrthologs,key,allOrthos):
 
@@ -50,6 +46,7 @@ def readInputFiles(args):
 	if args.input:
 		allInputFiles = args.input
 	elif args.inputDir:
+		import os
 		allFasta = []
 		#for (x,y,f) in os.walk(args.inputDir):
 		#	allFasta = f
@@ -65,6 +62,7 @@ def readInputFiles(args):
 		mySequences = []
 		input = ""
 		if inputFile[-3:] =='.gz':
+			import gzip
 			input = gzip.open(inputFile,'r')
 		else:
 			input = open(inputFile,'r')
@@ -73,8 +71,10 @@ def readInputFiles(args):
 				if sequence !="":
 					#print sequence
 					if args.dna:
+						from Bio.Alphabet import generic_dna
 						sequence = str(Seq(sequence,generic_dna).translate())
-					if args.rna:
+					elif args.rna:
+						from Bio.Alphabet import generic_rna
 						sequence = str(Seq(sequence,generic_rna).translate())
 					numToHeader[orthoGroup] = header
 					mySequences.append((sequence, dirOverlap))
